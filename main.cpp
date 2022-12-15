@@ -42,11 +42,15 @@ int main(){
     float timeDH0min = (float &) distanceHumans / ( (float &) vDog + (float &) vHuman0 );
     float sumDistDH0m = timeDH0min * ((float &) vHuman0 + (float &) vHuman1);
     (float &) distanceHumans = (float &) distanceHumans - sumDistDH0m;
+    if ( (float &) distanceHumans > joinDistance ){
       DogCount ++;
+    }
     float timeDH1min = (float &) distanceHumans / ( (float &) vDog + (float &) vHuman1 );
     float sumDistDH1m = timeDH1min * ((float &) vHuman0 + (float &) vHuman1);
     (float &) distanceHumans = (float &) distanceHumans - sumDistDH1m;
+    if ( (float &) distanceHumans > joinDistance ){
       DogCount ++;
+    }
   }
  std::cout << std::endl << (int &) DogCount << std::endl;
 }

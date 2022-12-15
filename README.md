@@ -5,6 +5,8 @@
 ## Вопрос:
 Пока друзья не встрелились. Сколько раз собака перебежит от одного друга к другому.
 
+### Вывод:
+В C++ собака бегает быстрее чем в Python.
 
 # Task:
 2 friends are moving towards each other. They have a dog who knows both friends very well and she runs from one friend to another.
